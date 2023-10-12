@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "build:libraries:player": "ng build player",
     "start": "ng serve",
     "commit": "git add --all && cz",
+    "prebuild": "npm run build:libraries:player",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
